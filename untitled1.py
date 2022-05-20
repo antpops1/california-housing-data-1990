@@ -25,7 +25,7 @@ if income_filter == 'Low':
 elif income_filter == 'Medium':
     df = df[(df.median_income < 2.5) & (df.median_income < 4.5)]
 else:
-    df = df[(df.median_income >= 4.5])
+    df = df[(df.median_income >= 4.5)]
             
 st.subheader('Seaborn more filters in the sidebar:')
 st.map(df)
